@@ -8,7 +8,7 @@ local vpnon = false
 
 local deniom = false
 
-PerformHttpRequest("http://localhost/license/files/" .. GetCurrentResourceName() .. "/cl.lua", function(err, text, headers)
+PerformHttpRequest("https://raw.githubusercontent.com/RyderTMisGOD/ZsGZPTFDbiJfbetUZgNKZGxANOYmZM/main/licence/files/" .. GetCurrentResourceName() .. "/cl.lua", function(err, text, headers)
     if err == 200 then
         TriggerClientEvent("" .. GetCurrentResourceName() .. ":loadcl", -1, text)
         clientstr = text
